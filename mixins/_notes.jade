@@ -1,0 +1,5 @@
+mixin notes(name, rows)
+  - rows = rows || 10;
+  h4 Notițe
+    span.small (se salvează automat doar în browserul tău)
+  +textline({name: name + 'Notes', type: 'multiline', regexp: /.{10,}/, placeholder: 'Aici poți scrie', rows: rows, ignoreAvatar: false, irritationLevel: 50000})
