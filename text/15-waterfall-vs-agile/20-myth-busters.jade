@@ -1,22 +1,52 @@
 +article("Mituri în proiecte", "Și realitățile vieții")
   +section("Mituri în proiecte")
     :markdown
-      ### Mituri în proiecte. Realitățile vieții
+      # Mituri în proiecte. Realitatea
 
-      • Well over 50% of software features are never used
-        • In most systems, less than 10% of features are always used
-        • Why do we create so many features not used by our customers?
-        • Causes:
-        – Anticipating features
-        – Failed projects
-        – Gold plating 24
+      De multe ori oamenii se bazează pe câteva ipoteze false atunci când încep proiectele. Ca multe alte mituri, și acestea ar fi interesante dacă s-ar întâmpla în realitate, dar nu este așa. Discutăm acum doar despre două dintre ele:
+
+      ### Clienții știu ce vor
+
+      **Mit:**  
+      Clientul știe bine ce își dorește atunci când pornește un proiect. Lucrurile pe care și le dorește sunt clare și ceea ce descrie este ceea ce are nevoie.
+
+      **Realitate:**  
+      Clienții știu rareori ce vor. Își dau seama de fapt atunci când văd un livrabil dacă acesta este ceea ce își doreau sau nu. Este un concept care se mai numește [IKIWISI]() (http://en.wiktionary.org/wiki/IKIWISI) -- *I'll know it when I see it.* adică "O să-mi dau seama atunci când îl văd". Nu este vorba numai de software, ci și de tapet, mâncare, rapoarte, campanii de marketing.
+
+      ### Nu se va schimba nimic în proiect, sau dacă se schimbă ne descurcăm
+
+      **Mit:**  
+      Nu vor exista schimbări majore în proiect, pentru că analiza și planificare care au fost făcute au fost bune.
+
+      **Realitate**  
+      Chiar presupunând că analiza și planificarea au fost bine făcute, există foarte mulți factori externi la care proiectul este expus, factori care nu pot fi controlați și care afectează serios proiectul:
+
+      * Acțiunile concurenței
+      * Reglementările guvernamentale
+      * Preferințele clienților
+      * Apariția de tehnologii noi
+      * Modificări în managementul general / strategii
+
+      Acești factori vor face ca o planificare perfectă la momentul inițial să fie inutilă la scurt timp duopă începerea proiectului.
+
+      De asemenea ar fi o greșeală teribilă ca schimbările să îi fie refuzate clientului. Schimbările sunt cerute de cele mai multe ori tocmai pentru că sunt necesare, iar pericolul de a avea un rezultat irelevant atunci când te ții de plan întocmai (fără să ajustezi nimic) este extrem de mare.
 
 
-      Myths ...
-        • Customerknowsexactlywhattheywant
-        • Developers know exactly how to build it
-        • Nothingwillchangealongtheway
-        Reality
-        • Customersdiscoverwhattheywantwhenthey see/experience it
-        • Developersdiscoverhowtobuilditwhenthey build it
-        • Manythingschangealongtheway
+      ### Echipa de proiect știe cum să facă treaba de la început
+
+      **Mit:**  
+      Echipa de proiect știe exact cum va proceda la realizarea sarcinilor din proiect.
+
+      **Realitate**  
+      Pe măsură ce sarcinile sunt executate, apar idei noi, probleme sau impedimente. Există echipe care au făcut de atâtea ori un tip de proiect încât au surprize foarte puține. Aceste situații sunt însă rare.
+
+
+    +notes('Myths', 4)
+
+    .activity
+      :markdown
+        ### Exercițiu
+
+        Care sunt alte mituri legate de proiecte pe care le știți?
+
+      +textline({name: 'myth-busters-1', type: 'multiline', rows: 14, regexp: /.{25,}/})

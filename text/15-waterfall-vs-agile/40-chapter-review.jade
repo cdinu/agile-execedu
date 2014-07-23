@@ -1,12 +1,44 @@
 +article("Chapter review", "Questions and notes")
   +section("Chapter review")
-    :markdown
-      Shu,Ha,Ri
-      Traditional Way ─ Relay race
-      Agile Way ─ Full team (Scrum) approach Largebatchflowtosmallbatchflow
-      IKIWISI ─ Gulf of evaluation
+    h2 Mică Recapitulare
+
+    p
+      em Am discutat despre metodologiile tradiționale de management de proiect și cum pot fi ele transformate pentru a se adapta cerințelor de schimbare rapidă și deasă.
+
+    +exercise
+
+      p Scrie câteva dintre ideile din capitol:
+      +textline({name: 'waterfall-vs-agile-review-1', type: 'multiline', rows: 4, regexp: /.{25,}/})
 
 
-    b Dă câteva exemple de proiecte în care waterfall este metodologia cea mai potrivită
+      p Dă câteva exemple de proiecte în care waterfall este metodologia cea mai potrivită:
+      +textline({name: 'waterfall-vs-agile-review-2', type: 'multiline', rows: 4, regexp: /.{25,}/})
 
-    +textline({name: 'waterfall-vs-agile-review-1', type: 'multiline', rows: 4, regexp: /.{25,}/})
+      p Când vezi sau auzi de la un client IKIWISI înseamnă:
+        .row
+          .col-md-2
+          .col-md-8
+            +exercise
+              +yesno({answer: false, name: 'waterfall-vs-agile-review-3', yes: "I kill it when I smell it.", no: "I will know it when I see it."})
+
+      p.clear-fix Selectează situațiile potrivite pentru metodologiile waterfall:
+
+      .row
+        .col-md-2
+        .col-md-8
+          +exercise
+            +yesno({answer: true, yes: 'Da', no: 'No'})
+              | Proiectul este critic:
+
+            +yesno({answer: false, yes: 'Da', no: 'No'})
+              | Schimbări dese ale cerințelor:
+
+            +yesno({answer: true, yes: 'Da', no: 'No'})
+              | Nevoie extremă de calitate:
+
+            +yesno({answer: true, yes: 'Da', no: 'No'})
+              | Avem o echipă care este răspândită în sedii diferite:
+
+            +yesno({answer: true, yes: 'Da', no: 'No'})
+              | Avem o specificații foarte clare:
+

@@ -48,12 +48,11 @@ define([
 
   window.IEProofLocalStorage.setItem('useCounter', useCounter);
 
-  if(!IEProofLocalStorage.teacherMode) {
-    IEProofLocalStorage.setItem('teacherMode', 'off');
-  }
+  IEProofLocalStorage.setItem('teacherMode', 'off');
 
   window.Exercises = Exercises;
   window.App.book.on('render', function() {
     $('#textbook a').attr('target', '_blank');
+    $('#textbook .minitoc a').attr('target', '');
   });
 });

@@ -1,0 +1,47 @@
++article("Comunicarea","Colocare, costuri de comunicare")
+  +section("Comunicarea")
+    :markdown
+      # Comunicarea
+
+      Idei principale:
+
+      * Comunicare directă
+      * În general informală
+      * Față în față pe cât posibil. Sau online cu video.
+
+    .row
+      .col-md-2
+      .col-md-8
+        +lightbox('img/collocation.jpg')
+        .caption Echipa comunică instantaneu informațiile (biroul Read Forward)
+
+    :markdown
+      ## Costuri de comunicare. Distanța costă
+
+      Dacă pentru a pune o întrebare și a primi un răspuns este necesar să consumi 2 minute, atunci pe parcursul unei luni de 20 de zile lucrătoare, într-o echipă de 6 persoane care pun 20 de întrebări pe zi se pierd câte zile de muncă?
+
+    +textline({
+        name: 'costOfCommunication', type:'numeric', regexp: /^10$/,
+        firstTimeDoneMessage: 'N-ai fi crezut că sunt 10 zile, dar așa e!',
+        description: 'Câte zile se pierd',
+        hints: {
+          5: 'Formula este: 20*6*20*2/60/8',
+          8: 'Mai precis: 20 de zile * 6 oameni * 20 de întrebări * 2 minute / 60 de minute pe oră / 8 ore pe zi de muncă'
+        },
+        ignoreAvatar: false
+      })
+      | Răspunde aici: 
+      .input.inline-block
+      .is-done-box.inline-block
+
+    :markdown
+      Sugestie: Echipa trebuie să fie colocată.
+
+    .row
+      .col-md-4
+      .col-md-6
+        +lightbox('img/cum-se-scrie.jpg')
+        .caption Chiar și micile distanțe se adună în costuri mari.
+    p
+
+    +notes('TeamRolesCommunications')
