@@ -21,13 +21,13 @@ define([
   if (hh >= 2 && hh < 12) {
     greetings.push('Bună dimineața!');
   }
-  else if (hh > 5 || hh < 2) {
+  else if (hh > 17 || hh < 2) {
     greetings.push('Bună seara!');
   } else {
     greetings.push('Bună ziua!');
   }
 
-  var useCounter = window.IEProofLocalStorage.getItem('useCounter') || 0;
+  var useCounter = window.App.storage.getItem('useCounter') || 0;
   useCounter = parseInt(useCounter) + 1;
 
   var message = greetings[Math.min(Math.floor(Math.random() *greetings.length*1.5), greetings.length-1)];
@@ -46,9 +46,9 @@ define([
     });
   }, 4000);
 
-  window.IEProofLocalStorage.setItem('useCounter', useCounter);
+  window.App.storage.setItem('useCounter', useCounter);
 
-  IEProofLocalStorage.setItem('teacherMode', 'off');
+  App.storage.setItem('teacherMode', 'off');
 
   window.Exercises = Exercises;
   window.App.book.on('render', function() {
